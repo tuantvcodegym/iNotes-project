@@ -20,8 +20,8 @@ class NoteController extends Controller
     }
     public function create(Request $request){
         $note = new Note();
-        $note->title = $request->input('title');
-        $note->content = $request->input('content');
+        $note->title = 'ihihih';
+        $note->content = 'tran van tuan';
         $note->note_id = $request->input('note_id');
         $note->save();
         return redirect()->route('note.list');
